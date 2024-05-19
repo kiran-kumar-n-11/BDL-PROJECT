@@ -3,6 +3,22 @@ from pydantic import BaseModel
 import xgboost as xgb
 import numpy as np
 import pickle
+import time
+
+from prometheus_client import Counter, Gauge, Summary, start_http_server
+from prometheus_client import disable_created_metrics
+
+# disable _created metric.
+disable_created_metrics()
+
+
+# Define Prometheus metrics
+REQUEST_DURATION = Summary('api_timing', 'Request duration in seconds')
+api_usage_counter = Counter("api_usage", "API usage counter", ['endpoint','client_ip'])
+api_runtime_gauge = Gauge("api_runtime", "API runtime gauge", ['endpoint', 'client_ip'])
+api_tltime_gauge = Gauge("api_tltime", "API T/L time gauge", ['endpoint', 'client_ip'])
+
+
 
 # Load the pretrained XGBoost model
 with open("ProjectZipped\\Project\\xgboost_model.pkl", "rb") as f:
@@ -76,8 +92,14 @@ def preprocess_input(data: ObesityPredictionRequest):
     
     return input_features.reshape(1, -1)
 
+
+
+@REQUEST_DURATION.time()
 @app.post("/predict")
 def predict_obesity_level(request: ObesityPredictionRequest):
+
+    start_time = time.time()
+
     # Preprocess the input data
     input_features = preprocess_input(request)
     
@@ -86,10 +108,27 @@ def predict_obesity_level(request: ObesityPredictionRequest):
     
     # Assuming the prediction is a continuous value and we need to classify it
     predicted_class = int(np.round(prediction[0]))
+
+
+    end_time = time.time()
+    runtime = end_time - start_time
+
+    tltime = runtime
+    
+    # Increment usage counter for the client IP
+    api_usage_counter.labels(endpoint="/predict",client_ip=request.client.host).inc()
+
+    # Set runtime and T/L time gauges
+    api_runtime_gauge.labels(endpoint="/predict", client_ip=request.client.host).set(runtime)
+    api_tltime_gauge.labels(endpoint="/predict", client_ip=request.client.host).set(tltime)
+
     
     return {"predicted_obesity_level": predicted_class}
 
 if __name__ == "__main__":
+    # start the exporter metrics service
+    start_http_server(18000)
+
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
