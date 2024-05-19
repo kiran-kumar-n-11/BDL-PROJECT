@@ -10,8 +10,8 @@ COPY requirements.txt .
 # Install the dependencies
 RUN pip install -r requirements.txt
 
-# # Copy the FastAPI application code into the container
-# COPY . .
+# Copy the FastAPI application code into the container
+COPY . .
 
 # Expose the port that the FastAPI application will run on
 EXPOSE 8000

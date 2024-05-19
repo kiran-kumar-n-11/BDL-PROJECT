@@ -21,7 +21,7 @@ api_tltime_gauge = Gauge("api_tltime", "API T/L time gauge", ['endpoint', 'clien
 
 
 # Load the pretrained XGBoost model
-with open("ProjectZipped\\Project\\xgboost_model.pkl", "rb") as f:
+with open("xgboost_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Define the request body using Pydantic
