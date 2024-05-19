@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/d3c3bfd56a6743e2bb727531b7155d16/artifacts
+deleted_time: 1716026589398
+end_time: 1716026086440
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: d3c3bfd56a6743e2bb727531b7155d16
+run_name: treasured-doe-189
+run_uuid: d3c3bfd56a6743e2bb727531b7155d16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716026077069
+status: 3
+tags: []
+user_id: kumar

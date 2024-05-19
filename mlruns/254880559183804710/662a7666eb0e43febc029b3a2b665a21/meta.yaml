@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/662a7666eb0e43febc029b3a2b665a21/artifacts
+deleted_time: 1716026228966
+end_time: 1716025907938
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: 662a7666eb0e43febc029b3a2b665a21
+run_name: calm-jay-673
+run_uuid: 662a7666eb0e43febc029b3a2b665a21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716025900461
+status: 3
+tags: []
+user_id: kumar

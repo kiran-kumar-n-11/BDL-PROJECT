@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/41860b367f904402863d10441d1d760f/artifacts
+end_time: 1716026544200
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: active
+run_id: 41860b367f904402863d10441d1d760f
+run_name: ExtraTreesClassifier
+run_uuid: 41860b367f904402863d10441d1d760f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716026534849
+status: 3
+tags: []
+user_id: kumar

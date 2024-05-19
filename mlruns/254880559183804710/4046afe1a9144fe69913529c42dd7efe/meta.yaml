@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/4046afe1a9144fe69913529c42dd7efe/artifacts
+deleted_time: 1716026228966
+end_time: 1716025917432
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: 4046afe1a9144fe69913529c42dd7efe
+run_name: adaptable-rat-53
+run_uuid: 4046afe1a9144fe69913529c42dd7efe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716025908241
+status: 3
+tags: []
+user_id: kumar

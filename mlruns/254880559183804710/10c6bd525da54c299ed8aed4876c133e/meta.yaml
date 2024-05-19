@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/10c6bd525da54c299ed8aed4876c133e/artifacts
+deleted_time: 1716026228966
+end_time: 1716025900027
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: 10c6bd525da54c299ed8aed4876c133e
+run_name: fortunate-bug-446
+run_uuid: 10c6bd525da54c299ed8aed4876c133e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716025887366
+status: 3
+tags: []
+user_id: kumar

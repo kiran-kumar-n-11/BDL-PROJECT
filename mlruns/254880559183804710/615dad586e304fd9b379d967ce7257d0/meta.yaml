@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/615dad586e304fd9b379d967ce7257d0/artifacts
+deleted_time: 1716026589391
+end_time: 1716026098061
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: 615dad586e304fd9b379d967ce7257d0
+run_name: handsome-snipe-562
+run_uuid: 615dad586e304fd9b379d967ce7257d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716026086840
+status: 3
+tags: []
+user_id: kumar

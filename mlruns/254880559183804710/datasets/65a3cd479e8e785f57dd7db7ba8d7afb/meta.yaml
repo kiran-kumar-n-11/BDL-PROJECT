@@ -1,0 +1,30 @@
+digest: e6630834
+name: dataset
+profile: '{"num_rows": 1669, "num_elements": 53408}'
+schema: '{"mlflow_colspec": [{"type": "integer", "name": "Age", "required": true},
+  {"type": "double", "name": "Height", "required": true}, {"type": "double", "name":
+  "Weight", "required": true}, {"type": "double", "name": "FCVC", "required": true},
+  {"type": "double", "name": "NCP", "required": true}, {"type": "double", "name":
+  "CH2O", "required": true}, {"type": "double", "name": "FAF", "required": true},
+  {"type": "double", "name": "TUE", "required": true}, {"type": "double", "name":
+  "BMI", "required": true}, {"type": "double", "name": "Gender_Female", "required":
+  true}, {"type": "double", "name": "Gender_Male", "required": true}, {"type": "double",
+  "name": "CALC_Always", "required": true}, {"type": "double", "name": "CALC_Frequently",
+  "required": true}, {"type": "double", "name": "CALC_Sometimes", "required": true},
+  {"type": "double", "name": "CALC_no", "required": true}, {"type": "double", "name":
+  "FAVC_no", "required": true}, {"type": "double", "name": "FAVC_yes", "required":
+  true}, {"type": "double", "name": "SCC_no", "required": true}, {"type": "double",
+  "name": "SCC_yes", "required": true}, {"type": "double", "name": "SMOKE_no", "required":
+  true}, {"type": "double", "name": "SMOKE_yes", "required": true}, {"type": "double",
+  "name": "family_history_with_overweight_no", "required": true}, {"type": "double",
+  "name": "family_history_with_overweight_yes", "required": true}, {"type": "double",
+  "name": "CAEC_Always", "required": true}, {"type": "double", "name": "CAEC_Frequently",
+  "required": true}, {"type": "double", "name": "CAEC_Sometimes", "required": true},
+  {"type": "double", "name": "CAEC_no", "required": true}, {"type": "double", "name":
+  "MTRANS_Automobile", "required": true}, {"type": "double", "name": "MTRANS_Bike",
+  "required": true}, {"type": "double", "name": "MTRANS_Motorbike", "required": true},
+  {"type": "double", "name": "MTRANS_Public_Transportation", "required": true}, {"type":
+  "double", "name": "MTRANS_Walking", "required": true}]}'
+source: '{"tags": {"mlflow.user": "kumar", "mlflow.source.name": "C:\\Users\\kumar\\anaconda3\\lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

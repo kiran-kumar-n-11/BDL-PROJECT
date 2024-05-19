@@ -1,0 +1,47 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.1
+mlflow_version: 2.12.1
+model_size_bytes: 4110938
+model_uuid: 0c067b78a43a49e3847f83a7760861c9
+run_id: e5c8161dde354c22a0dfbbb32ef5e8e9
+signature:
+  inputs: '[{"type": "integer", "name": "Age", "required": true}, {"type": "double",
+    "name": "Height", "required": true}, {"type": "double", "name": "Weight", "required":
+    true}, {"type": "double", "name": "FCVC", "required": true}, {"type": "double",
+    "name": "NCP", "required": true}, {"type": "double", "name": "CH2O", "required":
+    true}, {"type": "double", "name": "FAF", "required": true}, {"type": "double",
+    "name": "TUE", "required": true}, {"type": "double", "name": "BMI", "required":
+    true}, {"type": "double", "name": "Gender_Female", "required": true}, {"type":
+    "double", "name": "Gender_Male", "required": true}, {"type": "double", "name":
+    "CALC_Always", "required": true}, {"type": "double", "name": "CALC_Frequently",
+    "required": true}, {"type": "double", "name": "CALC_Sometimes", "required": true},
+    {"type": "double", "name": "CALC_no", "required": true}, {"type": "double", "name":
+    "FAVC_no", "required": true}, {"type": "double", "name": "FAVC_yes", "required":
+    true}, {"type": "double", "name": "SCC_no", "required": true}, {"type": "double",
+    "name": "SCC_yes", "required": true}, {"type": "double", "name": "SMOKE_no", "required":
+    true}, {"type": "double", "name": "SMOKE_yes", "required": true}, {"type": "double",
+    "name": "family_history_with_overweight_no", "required": true}, {"type": "double",
+    "name": "family_history_with_overweight_yes", "required": true}, {"type": "double",
+    "name": "CAEC_Always", "required": true}, {"type": "double", "name": "CAEC_Frequently",
+    "required": true}, {"type": "double", "name": "CAEC_Sometimes", "required": true},
+    {"type": "double", "name": "CAEC_no", "required": true}, {"type": "double", "name":
+    "MTRANS_Automobile", "required": true}, {"type": "double", "name": "MTRANS_Bike",
+    "required": true}, {"type": "double", "name": "MTRANS_Motorbike", "required":
+    true}, {"type": "double", "name": "MTRANS_Public_Transportation", "required":
+    true}, {"type": "double", "name": "MTRANS_Walking", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-05-18 10:02:00.184540'

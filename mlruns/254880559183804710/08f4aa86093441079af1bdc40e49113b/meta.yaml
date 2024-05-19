@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/254880559183804710/08f4aa86093441079af1bdc40e49113b/artifacts
+deleted_time: 1716026589406
+end_time: 1716026076717
+entry_point_name: ''
+experiment_id: '254880559183804710'
+lifecycle_stage: deleted
+run_id: 08f4aa86093441079af1bdc40e49113b
+run_name: capable-pig-795
+run_uuid: 08f4aa86093441079af1bdc40e49113b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716026069343
+status: 3
+tags: []
+user_id: kumar
